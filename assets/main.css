@@ -1,0 +1,39 @@
+/*
+==========================
+Box
+==========================
+*/
+
+body {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.box {
+  float: left;
+  width: 30%;
+  background-color: red;
+  box-sizing: border-box;
+  margin: 1%;
+}
+img {
+  width: 100%;
+}
+/*
+==========================
+Media Query
+==========================
+*/
+@media screen and (max-width: 480px) {
+  .box {
+    float: none;
+    width: 100%;
+  }
+}
