@@ -4,7 +4,7 @@ Box
 ==========================
 */
 body {
-  margin: 5%;
+  margin: 1%;
 }
 .container {
   width: 100%;
@@ -19,17 +19,17 @@ body {
   position: relative;
   float: left;
   width: 98%;
-  background-color: none;
-  box-sizing: border-box;
+  /*background-color: none;*/
+  /*box-sizing: border-box;*/
   overflow: visible;
-  margin: 1%;
+  /*margin: 1%;*/
   border: .15em solid #5ca4d6;
 }
 .wrapper {
   margin: 1%;
   width: 31%;
   float: left;
-  background-color: none;
+  /*background-color: none;*/
   position: relative;
   /*display: inline-block;*/
   box-sizing: border-box;
@@ -61,7 +61,6 @@ ul li {
   float: left;
   margin: 0;
   position: relative;
-  background-color: none;
   box-sizing: border-box;
   width: 20%;
   height: 100%;
@@ -73,10 +72,12 @@ ul li:first-of-type {
 ul li i {
   background-color: none;
   position: relative;
-  top: 25%;
-  left: 40%;
+  top: 24%;
+  left: 35%;
   color: #5ca4d6;
   font-size: 1em;
+  font-style: normal;
+  font-weight: bold;
 }
 .rotate {
   position: absolute;
@@ -88,6 +89,42 @@ ul li i {
   border-bottom: .15em solid #5ca4d6;
   border-left: .15em solid #5ca4d6;
 }
+i#blue {
+  color: #81bce5;
+}
+i#pink {
+  color: #d583ac;
+}
+i#yellow {
+  color: #deb17e;
+}
+div li.color i {
+  position: absolute;
+  line-height: 1;
+  top: 13%;
+  left: 30%;
+  width: 21px;
+  height: 21px;
+  font-size: 21px;
+  border: 3px solid #fff;
+}
+/*
+==========================
+Navigation Menu Hover
+==========================
+*/
+ul li:hover {
+  background-color: #5ca4d6;
+}
+li:hover i {
+  color: white;
+}
+.rotate:hover {
+  background-color: #5ca4d6;
+}
+.rotate i:hover {
+  color: white;
+}
 /*
 ==========================
 Footer
@@ -95,7 +132,6 @@ Footer
 */
 footer {
   color: #5ca4d6;
-  position: absolute;
   width: 100%;
   padding: 0 1% 0;
   bottom: -10%;
@@ -104,6 +140,7 @@ footer {
 }
 footer p {
   font-size: 1.2em;
+  font-family: sans-serif;
   float: left;
   margin: 1%;
 }
@@ -116,23 +153,11 @@ footer p:last-child {
 Media Query
 ==========================
 */
-@media screen and (max-width: 680px) {
-  .wrapper {
-    float: left;
-    width: auto;
-  }
 
-}
 @media screen and (max-width: 480px) {
   .wrapper {
     float: left;
     width: 95%;
     clear: both;
-  }
-  footer {
-    background: black;
-    float: left;
-    clear: both;
-    margin-bottom: 20px;
   }
 }
