@@ -3,9 +3,8 @@
 Box
 ==========================
 */
-
 body {
-  margin: 0;
+  margin: 5%;
 }
 .container {
   width: 100%;
@@ -14,26 +13,126 @@ body {
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
-  overflow: auto;
+  overflow: visible;
 }
 .box {
+  position: relative;
   float: left;
-  width: 30%;
-  background-color: red;
+  width: 98%;
+  background-color: none;
   box-sizing: border-box;
+  overflow: visible;
   margin: 1%;
+  border: .15em solid #5ca4d6;
+}
+.wrapper {
+  margin: 1%;
+  width: 31%;
+  float: left;
+  background-color: none;
+  position: relative;
+  /*display: inline-block;*/
+  box-sizing: border-box;
+  overflow: visible;
 }
 img {
+  width: 80%;
+  padding: 10%;
+  overflow: auto;
+}
+/*
+==========================
+Navigation Menu
+==========================
+*/
+ul {
+  padding: 0;
+  list-style: none;
+  background-color: none;
+  margin: 0;
+  position: relative;
+  float: left;
+  height: 40px;
   width: 100%;
+  box-sizing: border-box;
+  border-top: .15em solid #5ca4d6;
+}
+ul li {
+  float: left;
+  margin: 0;
+  position: relative;
+  background-color: none;
+  box-sizing: border-box;
+  width: 20%;
+  height: 100%;
+  border-left: .15em solid #5ca4d6;
+}
+ul li:first-of-type {
+  border-left: none;
+}
+ul li i {
+  background-color: none;
+  position: relative;
+  top: 25%;
+  left: 40%;
+  color: #5ca4d6;
+  font-size: 1em;
+}
+.rotate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2%;
+  color: #5ca4d6;
+  font-size: 1em;
+  border-bottom: .15em solid #5ca4d6;
+  border-left: .15em solid #5ca4d6;
+}
+/*
+==========================
+Footer
+==========================
+*/
+footer {
+  color: #5ca4d6;
+  position: absolute;
+  width: 100%;
+  padding: 0 1% 0;
+  bottom: -10%;
+  box-sizing: border-box;
+  background-color: none;
+}
+footer p {
+  font-size: 1.2em;
+  float: left;
+  margin: 1%;
+}
+footer p:last-child {
+  float: right;
+  font-weight: bold;
 }
 /*
 ==========================
 Media Query
 ==========================
 */
+@media screen and (max-width: 680px) {
+  .wrapper {
+    float: left;
+    width: auto;
+  }
+
+}
 @media screen and (max-width: 480px) {
-  .box {
-    float: none;
-    width: 100%;
+  .wrapper {
+    float: left;
+    width: 95%;
+    clear: both;
+  }
+  footer {
+    background: black;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
   }
 }
