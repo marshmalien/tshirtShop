@@ -55,7 +55,7 @@ Navigation Menu
   border-bottom: .15em solid #5ca4d6;
   border-left: .15em solid #5ca4d6;
 }
-#navMenu ul {
+nav > ul {
   padding: 0;
   list-style: none;
   background-color: none;
@@ -67,7 +67,7 @@ Navigation Menu
   box-sizing: border-box;
   border-top: .15em solid #5ca4d6;
 }
-#navMenu ul li {
+#navMenu > li {
   float: left;
   margin: 0;
   position: relative;
@@ -76,10 +76,10 @@ Navigation Menu
   height: 100%;
   border-left: .15em solid #5ca4d6;
 }
-#navMenu ul li:first-of-type {
+#navMenu li:first-of-type {
   border-left: none;
 }
-#navMenu ul li i {
+nav ul > li i {
   background-color: none;
   position: relative;
   top: 24%;
@@ -89,24 +89,34 @@ Navigation Menu
   font-style: normal;
   font-weight: bold;
 }
-#navMenu i#blue {
+/*.color i#blue {
+  font-size: 2em;
+}*/
+}
+#blue {
   color: #81bce5;
 }
-#navMenu i#pink {
+#pink {
   color: #d583ac;
 }
-#navMenu i#yellow {
+#yellow {
   color: #deb17e;
 }
-#navMenu  li.color i {
+#green {
+  color: #8bb992;
+}
+#navMenu li.color i {
   position: absolute;
-  line-height: 1;
-  top: 13%;
+  top: 10%;
   left: 30%;
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   font-size: 21px;
+  background-color: #81bce5;
   border: 3px solid #fff;
+}
+#navMenu ul li:hover i {
+  color: white;
 }
 /*
 ==========================
@@ -127,18 +137,87 @@ li:hover i {
 }
 /*
 ==========================
-Shirt Size Sub-Menu
+Sub-Menus
 ==========================
 */
-#subMenu ul {
-  position: absolute;
-  bottom: 22px;
-  left: 205px;
-  list-style: none;
-  background-color: white;
-  border: solid 2px #5ca4d6;
+ul.sizeSubMenu {
   padding: 0;
-  width: 24%;
+  margin: 0;
+  position: absolute;
+  background-color: white;
+  bottom: 100%;
+  left: -12%;
+  list-style: none;
+  border: solid 2px #5ca4d6;
+  width: 120%;
+  text-align: center;
+}
+
+.sizeSubMenu li {
+  float: none;
+  background-color: white;
+  width: 100%;
+}
+
+ul.colorSubMenu {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  border: solid 2px #5ca4d6;
+  height: 230%;
+  width: 120%;
+  left: -12%;
+  bottom: 100%;
+}
+ul.colorSubMenu li {
+  height: 50%;
+  width: 47%;
+  position: absolute;
+  display: inline-block;
+}
+.sharp {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+}
+
+.colorSubMenu li:first-child {
+  top: 0;
+  left: 0;
+}
+.colorSubMenu li:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+.colorSubMenu li:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+.colorSubMenu li:last-child {
+  bottom: 0;
+  right: 0;
+}
+span#blue {
+  right: -10%
+}
+span#yellow {
+  right: -10%;
+  bottom: 10%;
+}
+span#pink {
+  left: -10%;
+}
+span#green {
+  left: -10%;
+  bottom: 10%;
+}
+span#green {
+  bottom: 10%;
 }
 
 /*
