@@ -13,7 +13,6 @@ Box
   padding: 0;
   position: relative;
   width: 100%;
-  z-index: 1;
 }
 .wrapper {
   box-sizing: border-box;
@@ -80,16 +79,16 @@ nav ul > li i {
   top: 24%;
 }
 
-#blue {
+.blue {
   color: #81bce5;
 }
-#pink {
+.pink {
   color: #d583ac;
 }
-#yellow {
+.yellow {
   color: #deb17e;
 }
-#green {
+.green {
   color: #8bb992;
 }
 #navMenu li.color i {
@@ -261,28 +260,13 @@ ul.colorSubMenu {
   background-color: white;
   list-style: none;
   border: solid 2px #5ca4d6;
-  height: 230%;
+  height: 220%;
   width: 120%;
   left: -12%;
   bottom: 150%;
   transition: all .4s ease;
   opacity: 0;
 }
-ul.colorSubMenu li {
-  height: 50%;
-  width: 47%;
-  position: absolute;
-  display: inline-block;
-}
-.sharp {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  text-align: center;
-  font-size: 30px;
-}
-
 .colorSubMenu li:first-child {
   top: 0;
   left: 0;
@@ -299,22 +283,28 @@ ul.colorSubMenu li {
   bottom: 0;
   right: 0;
 }
-span#blue {
-  right: -10%;
-  color: #81bce5;
+.colorSubMenu li {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
 }
-span#yellow {
-  right: -10%;
+.colorSubMenu span {
+  position: absolute;
+  font-size: 2em;
+}
+span.blue {
+  left: 20%;
+}
+span.pink {
+  right: 20%;
+}
+span.yellow {
+  left: 20%;
   bottom: 10%;
 }
-span#pink {
-  left: -10%;
-}
-span#green {
-  left: -10%;
-  bottom: 10%;
-}
-span#green {
+span.green {
+  right: 20%;
   bottom: 10%;
 }
 
