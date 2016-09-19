@@ -3,7 +3,10 @@
 Box
 ==========================
 */
-
+* {
+  font-family: sans-serif;
+  font-style: normal;
+}
 .box {
   border-left: .15em solid #5ca4d6;
   border-right: .15em solid #5ca4d6;
@@ -32,6 +35,7 @@ img {
 Navigation Menu
 ==========================
 */
+
 .rotate {
   border-bottom: .15em solid #5ca4d6;
   border-left: .15em solid #5ca4d6;
@@ -46,7 +50,7 @@ Navigation Menu
 nav > ul {
   border: .15em solid #5ca4d6;
   float: left;
-  height: 40px;
+  height: 50px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -65,20 +69,31 @@ nav > ul {
 .navMenu li:first-of-type {
   border-left: none;
 }
-i.fa {
-  font-size: 20px;
-}
+
 nav ul > li i {
   background-color: none;
   color: #5ca4d6;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: bold;
+  font-size: 1.6em;
   left: 35%;
   position: relative;
   top: 24%;
 }
-
+.navMenu li.color i {
+  background-color: #81bce5;
+  border: 3px solid #fff;
+  font-size: 21px;
+  height: 25px;
+  left: 30%;
+  position: absolute;
+  top: 19%;
+  width: 25px;
+}
+.navMenu ul li:hover i {
+  color: white;
+}
+i.fa {
+  font-size: 1.6em;
+}
 .blue {
   color: #81bce5;
 }
@@ -90,19 +105,6 @@ nav ul > li i {
 }
 .green {
   color: #8bb992;
-}
-.navMenu li.color i {
-  background-color: #81bce5;
-  border: 3px solid #fff;
-  font-size: 21px;
-  height: 25px;
-  left: 30%;
-  position: absolute;
-  top: 10%;
-  width: 25px;
-}
-.navMenu ul li:hover i {
-  color: white;
 }
 /*
 ==========================
@@ -134,7 +136,7 @@ ul.sizeSubMenu {
   margin: 0;
   position: absolute;
   background-color: white;
-  bottom: 150%;
+  bottom: 138%;
   left: -12%;
   list-style: none;
   border: solid 2px #5ca4d6;
@@ -147,7 +149,6 @@ ul.sizeSubMenu {
   float: none;
   background-color: white;
   width: 100%;
-  font-family: sans-serif;
 }
 li.icon-t-shirt {
   height: 50px;
@@ -258,20 +259,19 @@ Shirt Color Sub-Menu
 ==========================
 */
 
-
 ul.colorSubMenu {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  background-color: white;
-  list-style: none;
-  border: solid 2px #5ca4d6;
-  height: 220%;
-  width: 120%;
-  left: -12%;
-  bottom: 150%;
-  transition: all .4s ease;
-  opacity: 0;
+padding: 0;
+margin: 0;
+position: absolute;
+background-color: white;
+list-style: none;
+border: solid 2px #5ca4d6;
+height: 190%;
+width: 120%;
+left: -12%;
+bottom: 138%;
+transition: all .4s ease;
+opacity: 0;
 }
 .colorSubMenu li:first-child {
   top: 0;
@@ -298,6 +298,7 @@ ul.colorSubMenu {
 .colorSubMenu span {
   position: absolute;
   font-size: 2em;
+  font-family: serif;
 }
 span.blue {
   left: 20%;
@@ -329,7 +330,6 @@ footer {
 footer p {
   color: #5ca4d6;
   font-size: 1.2em;
-  font-family: sans-serif;
   float: left;
   margin: 1%;
 }
