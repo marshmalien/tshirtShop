@@ -5,13 +5,14 @@ Box
 */
 
 .box {
-  background: red;
-  border: .15em solid #5ca4d6;
+  border-left: .15em solid #5ca4d6;
+  border-right: .15em solid #5ca4d6;
+  border-top: .15em solid #5ca4d6;
   float: left;
   overflow: visible;
   padding: 0;
   position: relative;
-  width: 98%;
+  width: 100%;
   z-index: 1;
 }
 .wrapper {
@@ -44,9 +45,7 @@ Navigation Menu
   z-index: 4;
 }
 nav > ul {
-  background-color: none;
-  border-top: .15em solid #5ca4d6;
-  box-sizing: border-box;
+  border: .15em solid #5ca4d6;
   float: left;
   height: 40px;
   list-style: none;
