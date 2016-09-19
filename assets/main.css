@@ -53,7 +53,7 @@ nav > ul {
   position: relative;
   width: 100%;
 }
-#navMenu > li {
+.navMenu > li {
   border-left: .15em solid #5ca4d6;
   box-sizing: border-box;
   float: left;
@@ -62,7 +62,7 @@ nav > ul {
   position: relative;
   width: 20%;
 }
-#navMenu li:first-of-type {
+.navMenu li:first-of-type {
   border-left: none;
 }
 i.fa {
@@ -91,7 +91,7 @@ nav ul > li i {
 .green {
   color: #8bb992;
 }
-#navMenu li.color i {
+.navMenu li.color i {
   background-color: #81bce5;
   border: 3px solid #fff;
   font-size: 21px;
@@ -101,7 +101,7 @@ nav ul > li i {
   top: 10%;
   width: 25px;
 }
-#navMenu ul li:hover i {
+.navMenu ul li:hover i {
   color: white;
 }
 /*
