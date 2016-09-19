@@ -205,46 +205,52 @@ span.small {
   color: #5ca4d6;
   font-size: 12px;
 }
-.sizeSubMenu .triangleBorder {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #5ca5d6;
-  position: absolute;
-  top: 200px;
-  left: 40%;
-}
-.sizeSubMenu .triangeInset {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid white;
-  position: absolute;
-  top: 200px;
-  left: 42%;
-}
 
-.colorSubMenu .triangeInset {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid white;
-  position: absolute;
-  top: 87px;
-      left: 41%;
+.sizeSubMenu:after, .sizeSubMenu:before {
+  top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
 }
-.colorSubMenu .triangleBorder {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #5ca5d6;
-  position: absolute;
-  top: 87px;
-  left: 38%;
+.sizeSubMenu:before {
+  border-color: transparent;
+	border-top-color: white;
+	border-width: 7px;
+	margin-left: -7px;
+  z-index: 5;
+}
+.sizeSubMenu:after {
+  border-color: transparent;;
+	border-top-color: #5ca4d6;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.colorSubMenu:after, .colorSubMenu:before {
+  top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.colorSubMenu:before {
+  border-color: transparent;
+	border-top-color: white;
+	border-width: 7px;
+	margin-left: -7px;
+  z-index: 5;
+}
+.colorSubMenu:after {
+  border-color: transparent;;
+	border-top-color: #5ca4d6;
+	border-width: 10px;
+	margin-left: -10px;
 }
 /*
 ==========================
@@ -336,7 +342,7 @@ footer p:last-child {
 Transform
 ==========================
 */
-li#size:hover ul.sizeSubMenu {
+li.size:hover ul.sizeSubMenu {
   transform: translate(0, 19px);
   opacity: 1;
 }
@@ -380,15 +386,7 @@ div.front {
 div.back {
   transform: rotateY(180deg);
 }
-#navMenu li.color i#blue {
-  background-color: #81bce5;
-}
-#navMenu li.color i#pink {
-  background-color: #d583ac;
-}
-#navMenu li.color i#yellow {
-  background-color: #deb17e;
-}
+
 /*
 ==========================
 Media Query
