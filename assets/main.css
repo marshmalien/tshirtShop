@@ -19,19 +19,16 @@ body {
   position: relative;
   float: left;
   width: 98%;
-  /*background-color: none;*/
-  /*box-sizing: border-box;*/
   overflow: visible;
-  /*margin: 1%;*/
   border: .15em solid #5ca4d6;
+  z-index: 1;
+  padding: 0;
 }
 .wrapper {
   margin: 1%;
   width: 31%;
   float: left;
-  /*background-color: none;*/
   position: relative;
-  /*display: inline-block;*/
   box-sizing: border-box;
   overflow: visible;
 }
@@ -54,6 +51,7 @@ Navigation Menu
   font-size: 1em;
   border-bottom: .15em solid #5ca4d6;
   border-left: .15em solid #5ca4d6;
+  z-index: 4;
 }
 nav > ul {
   padding: 0;
@@ -158,6 +156,7 @@ ul.sizeSubMenu {
   float: none;
   background-color: white;
   width: 100%;
+  font-family: sans-serif;
 }
 li.icon-t-shirt {
   height: 50px;
@@ -322,6 +321,42 @@ li#size:hover ul.sizeSubMenu {
 .color:hover ul.colorSubMenu {
   transform: translate(0, 19px);
   opacity: 1;
+}
+/*
+==========================
+Shirt Flip
+==========================
+*/
+.flipContainer {
+  perspective: 1000;
+}
+.flipper {
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  position: relative;
+}
+
+.rotate:hover ~ div.flipContainer .flipper {
+  transform: rotateY(180deg);
+}
+.flipContainer, .front, .back {
+  position: relative;
+  width: 100%;
+  height: 360px;
+
+}
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+div.back {
+  transform: rotateY(180deg);
 }
 /*
 ==========================
