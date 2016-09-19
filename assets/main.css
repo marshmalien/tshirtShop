@@ -77,6 +77,9 @@ nav > ul {
 #navMenu li:first-of-type {
   border-left: none;
 }
+i.fa {
+  font-size: 20px;
+}
 nav ul > li i {
   background-color: none;
   position: relative;
@@ -214,7 +217,47 @@ span.small {
   color: #5ca4d6;
   font-size: 12px;
 }
+.sizeSubMenu .triangleBorder {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #5ca5d6;
+  position: absolute;
+  top: 200px;
+  left: 40%;
+}
+.sizeSubMenu .triangeInset {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+  position: absolute;
+  top: 200px;
+  left: 42%;
+}
 
+.colorSubMenu .triangeInset {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+  position: absolute;
+  top: 87px;
+      left: 41%;
+}
+.colorSubMenu .triangleBorder {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #5ca5d6;
+  position: absolute;
+  top: 87px;
+  left: 38%;
+}
 /*
 ==========================
 Shirt Color Sub-Menu
@@ -263,7 +306,7 @@ ul.colorSubMenu li {
   bottom: 0;
   left: 0;
 }
-.colorSubMenu li:last-child {
+.colorSubMenu li:nth-child(4) {
   bottom: 0;
   right: 0;
 }
