@@ -89,10 +89,7 @@ nav ul > li i {
   font-style: normal;
   font-weight: bold;
 }
-/*.color i#blue {
-  font-size: 2em;
-}*/
-}
+
 #blue {
   color: #81bce5;
 }
@@ -135,9 +132,12 @@ li:hover i {
 .rotate:hover i {
   color: white;
 }
+.icon-t-shirt:hover {
+  color: white;
+}
 /*
 ==========================
-Sub-Menus
+Shirt Size Sub-Menu
 ==========================
 */
 ul.sizeSubMenu {
@@ -145,19 +145,83 @@ ul.sizeSubMenu {
   margin: 0;
   position: absolute;
   background-color: white;
-  bottom: 100%;
+  bottom: 150%;
   left: -12%;
   list-style: none;
   border: solid 2px #5ca4d6;
   width: 120%;
   text-align: center;
+  transition: all .4s ease;
+  opacity: 0;
 }
-
 .sizeSubMenu li {
   float: none;
   background-color: white;
   width: 100%;
 }
+li.icon-t-shirt {
+  height: 50px;
+}
+span.xlarge {
+  float: left;
+  position: relative;
+  top: 42%;
+  left: 43%;
+}
+span.large {
+  position: relative;
+  top: 36%;
+  float: left;
+  left: 47%;
+}
+span.medium {
+  float: left;
+  position: relative;
+  top: 30%;
+  left: 45%;
+}
+span.small {
+  float: left;
+  position: relative;
+  top: 25%;
+  left: 45%;
+}
+.sizeSubMenu li:nth-child(1):before {
+  font-size: 35px;
+  position: relative;
+  top: 20%;
+  left: -8%;
+}
+.sizeSubMenu li:nth-child(2):before {
+  font-size: 30px;
+  position: relative;
+  top: 20%;
+  left: -2%;
+}
+
+.sizeSubMenu li:nth-child(3):before {
+  font-size: 25px;
+  position: relative;
+  top: 20%;
+  left: -5%;
+}
+.sizeSubMenu li:nth-child(4):before {
+  font-size: 20px;
+  position: relative;
+  top: 17%;
+  left: -4%;
+}
+.icon-t-shirt {
+  color: #5ca4d6;
+  font-size: 12px;
+}
+
+/*
+==========================
+Shirt Color Sub-Menu
+==========================
+*/
+
 
 ul.colorSubMenu {
   padding: 0;
@@ -169,7 +233,9 @@ ul.colorSubMenu {
   height: 230%;
   width: 120%;
   left: -12%;
-  bottom: 100%;
+  bottom: 150%;
+  transition: all .4s ease;
+  opacity: 0;
 }
 ul.colorSubMenu li {
   height: 50%;
@@ -203,7 +269,8 @@ ul.colorSubMenu li {
   right: 0;
 }
 span#blue {
-  right: -10%
+  right: -10%;
+  color: #81bce5;
 }
 span#yellow {
   right: -10%;
@@ -242,6 +309,19 @@ footer p {
 footer p:last-child {
   float: right;
   font-weight: bold;
+}
+/*
+==========================
+Transform
+==========================
+*/
+li#size:hover ul.sizeSubMenu {
+  transform: translate(0, 19px);
+  opacity: 1;
+}
+.color:hover ul.colorSubMenu {
+  transform: translate(0, 19px);
+  opacity: 1;
 }
 /*
 ==========================
