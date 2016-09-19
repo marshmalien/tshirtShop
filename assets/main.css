@@ -401,6 +401,15 @@ div.front {
 div.back {
   transform: rotateY(180deg);
 }
+#navMenu li.color i#blue {
+  background-color: #81bce5;
+}
+#navMenu li.color i#pink {
+  background-color: #d583ac;
+}
+#navMenu li.color i#yellow {
+  background-color: #deb17e;
+}
 /*
 ==========================
 Media Query
