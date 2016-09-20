@@ -25,11 +25,7 @@ Box
   position: relative;
   width: 31%;
 }
-img {
-  overflow: auto;
-  padding: 10%;
-  width: 80%;
-}
+
 .rotate {
   border-bottom: .15em solid #5ca4d6;
   border-left: .15em solid #5ca4d6;
