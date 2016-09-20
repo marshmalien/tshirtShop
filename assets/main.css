@@ -6,6 +6,7 @@ Box
 * {
   font-family: sans-serif;
   font-style: normal;
+  font-size: 100%
 }
 .box {
   border-left: .15em solid #5ca4d6;
@@ -387,7 +388,7 @@ div.back {
 Media Query
 ==========================
 */
-@media only screen and (max-width:1100px) {
+@media only screen and (max-width:1160px) {
   .colorSubMenu span {
     font-size: 1.7vw;
   }
@@ -461,8 +462,16 @@ Media Query
     top: 0.7vw;
     width: 3.5vw;
   }
-  .colorSubMenu span {
-    font-size: 3.5vw;
+  li.icon-t-shirt {
+    height: 7vw;
+  }
+  li.icon-t-shirt:before {
+    top: 85%;
+    left: 30%;
+  }
+  ul.sizeSubMenu {
+    bottom: 153%;
+    width: 12vw;
   }
   ul.colorSubMenu {
   width: 11vw;
@@ -470,11 +479,7 @@ Media Query
   bottom: 158%;
   left: -15%;
   }
-  li.icon-t-shirt {
-    height: 8vw;
-  }
-  ul.sizeSubMenu {
-    bottom: 153%;
-    width: 12vw;
+  .colorSubMenu span {
+    font-size: 3.5vw;
   }
 }
