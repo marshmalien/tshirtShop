@@ -1,0 +1,145 @@
+$borderColor: #5ca4d6;
+$blue: #81bce5;
+$pink: #d583ac;
+$yellow: #deb17e;
+$green: #8bb992;
+
+ul {
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+
+// Flip Container
+
+.itemContainer {
+  position: relative;
+  width: 22%;
+  margin: 2% 1% 25px 2%;
+}
+
+.topContainer {
+  position: relative;
+  border: .15em solid $borderColor;
+  .flipContainer {
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+    height: 22vw;
+    .flipper {
+      position: relative;
+      transform-style: preserve-3d;
+      transition: all 2s ease;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.button:hover ~ .flipContainer .flipper {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2vw;
+}
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.back {
+  transform: rotateY(180deg);
+}
+
+
+.button {
+  border-bottom: .15em solid $borderColor;
+  border-left: .15em solid $borderColor;
+  padding: 1vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  i {
+    color: $borderColor;
+  }
+  &:hover {
+    background-color: $borderColor;
+    i {
+      color: white;
+    }
+  }
+}
+
+// Bottom Navigation
+.bottomList {
+  height: 30px;
+  overflow: hidden;
+  border-bottom: .15em solid $borderColor;
+  border-right: .15em solid $borderColor;
+
+  li {
+    color: $borderColor;
+    border-left: .15em solid $borderColor;
+    width: 20%;
+    height: inherit;
+    text-align: center;
+    padding: 5px 0;
+    overflow: hidden;
+    &:hover {
+      background-color: $borderColor;
+      &::before {
+        color: white;
+      }
+      &.sub {
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+p {
+  margin-top: 1vw;
+  font-size: 2.8vh;
+  color: $borderColor;
+  float: left;
+  & + & {
+    font-weight: bold;
+    float: right;
+  }
+}
+
+.sizeSubMenu {
+  display: none;
+}
+.colorSubMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .topContainer .flipContainer {
+    height: 28vw;
+  }
+  .itemContainer {
+    margin: 2%;
+    width: 29%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .topContainer .flipContainer {
+    height: 45vw;
+  }
+  .itemContainer {
+    margin: 2%;
+    width: 45%;
+  }
+}
