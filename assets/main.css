@@ -44,6 +44,19 @@ img {
 }
 /*
 ==========================
+Nav Links
+==========================
+*/
+.links ul {
+  border-style: none;
+  float: left;
+}
+.links li {
+  float: right;
+  padding: 0 3px;
+}
+/*
+==========================
 Navigation Menu
 ==========================
 */
@@ -481,5 +494,8 @@ Media Query
   }
   .colorSubMenu span {
     font-size: 3.5vw;
+  }
+  .links ul {
+    display: none;
   }
 }
