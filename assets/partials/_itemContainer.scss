@@ -1,8 +1,4 @@
-$borderColor: #5ca4d6;
-$blue: #81bce5;
-$pink: #d583ac;
-$yellow: #deb17e;
-$green: #8bb992;
+
 
 ul {
   overflow: hidden;
@@ -65,6 +61,7 @@ li {
   transform: rotateY(180deg);
 }
 
+// Rotate hover button
 
 .button {
   border-bottom: .15em solid $borderColor;
@@ -87,35 +84,7 @@ li {
   }
 }
 
-// Bottom Navigation
-.bottomList {
-  height: 30px;
-  overflow: hidden;
-  border-bottom: .15em solid $borderColor;
-  border-right: .15em solid $borderColor;
-
-  li {
-    color: $borderColor;
-    border-left: .15em solid $borderColor;
-    width: 20%;
-    height: inherit;
-    text-align: center;
-    padding: 5px 0;
-    overflow: hidden;
-
-    &:hover {
-      background-color: $borderColor;
-
-      &::before {
-        color: white;
-      }
-
-      &.sub {
-        color: white;
-      }
-    }
-  }
-}
+// Footer
 
 p {
   margin-top: 1vw;
@@ -126,117 +95,5 @@ p {
   & + & {
     font-weight: bold;
     float: right;
-  }
-}
-// Size sub menu
-ul.size {
-  border: .15em solid $borderColor;
-  position: absolute;
-  left: 8vw;
-  width: 6vw;
-  margin-top: -151px;
-  z-index: 2;
-  opacity: 0;
-
-  li {
-    width: 100%;
-    border: none;
-    float: none;
-    font-size: 1em;
-
-    &::before {
-      font-size: 1.8em;
-      float: none;
-      vertical-align: text-top;
-    }
-    &:nth-child(1):before {
-      font-size: 2em;
-    }
-    &:nth-child(2):before {
-      font-size: 1.8em;
-    }
-    &:nth-child(3):before {
-      font-size: 1.6em;
-    }
-    &:nth-child(4):before {
-      font-size: 1.4em;
-    }
-    &:hover {
-      span {
-        color: white;
-      }
-    }
-    span {
-      position: absolute;
-    }
-  }
-}
-
-li.size {
-  &:hover + ul {
-    opacity: 1;
-  }
-}
-
-ul.colors {
-  border: 0.15em solid #5ca4d6;
-  position: absolute;
-  right: 15%;
-  width: 7vw;
-  margin-top: -66px;
-  z-index: 2;
-  opacity: 0;
-
-  li {
-    border: none;
-    display: inline-block;
-    position: relative;
-    width: 50%;
-    height: 50%;
-    font-size: 1.4em;
-    padding: 0.2em;
-  }
-}
-
-li.colors {
-  &:hover + ul {
-    opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .topContainer .flipContainer {
-    height: 28vw;
-  }
-  .itemContainer {
-    margin: 2%;
-    width: 29%;
-  }
-  ul.size {
-    left: 35%;
-    width: 9vw;
-  }
-  ul.colors {
-    right: 13%;
-    width: 10vw;
-    margin-top: -66px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .topContainer .flipContainer {
-    height: 45vw;
-  }
-  .itemContainer {
-    margin: 2%;
-    width: 45%;
-  }
-  ul.size {
-    width: 14vw;
-  }
-  ul.colors {
-    right: 16%;
-    width: 13vw;
-    margin-top: -66px;
   }
 }

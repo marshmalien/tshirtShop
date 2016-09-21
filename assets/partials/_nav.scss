@@ -1,0 +1,114 @@
+// Primary Navigation Menu
+.bottomList {
+  height: 30px;
+  overflow: hidden;
+  border-bottom: .15em solid $borderColor;
+  border-right: .15em solid $borderColor;
+
+  li {
+    color: $borderColor;
+    border-left: .15em solid $borderColor;
+    width: 20%;
+    height: inherit;
+    text-align: center;
+    padding: 5px 0;
+    overflow: hidden;
+
+    &:hover {
+      background-color: $borderColor;
+
+      &::before {
+        color: white;
+      }
+
+      &.size {
+        color: white;
+      }
+    }
+  }
+}
+
+li.colors {
+  height: 30px;
+}
+
+// Size sub-menu
+ul.size {
+  border: .15em solid $borderColor;
+  position: absolute;
+  left: 8vw;
+  width: 6vw;
+  margin-top: -151px;
+  z-index: 2;
+  opacity: 0;
+
+  li {
+    width: 100%;
+    border: none;
+    float: none;
+    font-size: 1em;
+
+    &::before {
+      font-size: 1.8em;
+      float: none;
+      vertical-align: text-top;
+    }
+    &:nth-child(1):before {
+      font-size: 2em;
+    }
+    &:nth-child(2):before {
+      font-size: 1.8em;
+    }
+    &:nth-child(3):before {
+      font-size: 1.6em;
+    }
+    &:nth-child(4):before {
+      font-size: 1.4em;
+    }
+    &:hover {
+      span {
+        color: white;
+      }
+    }
+    span {
+      position: absolute;
+    }
+  }
+}
+
+li.size {
+  &:hover + ul {
+    opacity: 1;
+  }
+}
+
+// Colors sub-menu
+ul.colors {
+  border: 0.15em solid #5ca4d6;
+  position: absolute;
+  right: 15%;
+  width: 7vw;
+  margin-top: -66px;
+  z-index: 2;
+  opacity: 0;
+  color: $blue;
+
+  li {
+    border: none;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    font-size: 1.4em;
+    padding: 0.2em;
+  }
+}
+
+li.colors {
+  &:hover {
+  color: white;
+  }
+  &:hover + ul {
+    opacity: 1;
+  }
+}

@@ -1,3 +1,34 @@
+$borderColor: #5ca4d6;
+$blue: #81bce5;
+$pink: #d583ac;
+$yellow: #deb17e;
+$green: #8bb992;
+
+.itemContainer .colors {
+  .blue {
+    color: $blue;
+  }
+  .pink {
+    color: $pink;
+  }
+  .yellow {
+    color: $yellow;
+  }
+  .green {
+    color: $green;
+  }
+}
+.bottomContainer {
+  li.blue.colors {
+    color: $blue;
+  }
+  li.pink.colors {
+    color: $pink;
+  }
+  li.yellow.colors {
+    color: $yellow;
+  }
+}
 
 @media only screen and (max-width: 900px) {
   .topContainer .flipContainer {
@@ -12,7 +43,7 @@
     width: 9vw;
   }
   ul.colors {
-    right: 13%;
+    right: 12%;
     width: 10vw;
     margin-top: -66px;
   }
