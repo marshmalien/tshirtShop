@@ -14,31 +14,6 @@
 .bottomContainer li.yellow.colors {
   color: #deb17e; }
 
-@media only screen and (max-width: 900px) {
-  body .topContainer .flipContainer {
-    height: 28vw; }
-  body .itemContainer {
-    margin: 2%;
-    width: 29%; }
-  body ul.size {
-    left: 35%;
-    width: 9vw; }
-  body ul.colors {
-    right: 12%;
-    width: 10vw;
-    margin-top: -66px; } }
-@media only screen and (max-width: 600px) {
-  body .topContainer .flipContainer {
-    height: 45vw; }
-  body .itemContainer {
-    margin: 2%;
-    width: 45%; }
-  body ul.size {
-    width: 14vw; }
-  body ul.colors {
-    right: 16%;
-    width: 13vw;
-    margin-top: -66px; } }
 /* Eric Meyer's CSS Reset
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -239,5 +214,31 @@ p {
   p + p {
     font-weight: bold;
     float: right; }
+
+@media only screen and (max-width: 900px) {
+  body .topContainer .flipContainer {
+    height: 28vw; }
+  body .itemContainer {
+    margin: 2%;
+    width: 29%; }
+  body ul.size {
+    left: 35%;
+    width: 9vw; }
+  body ul.colors {
+    right: 12%;
+    width: 10vw;
+    margin-top: -66px; } }
+@media only screen and (max-width: 600px) {
+  body .topContainer .flipContainer {
+    height: 45vw; }
+  body .itemContainer {
+    margin: 2%;
+    width: 45%; }
+  body ul.size {
+    width: 14vw; }
+  body ul.colors {
+    right: 16%;
+    width: 13vw;
+    margin-top: -66px; } }
 
 /*# sourceMappingURL=main.css.map */

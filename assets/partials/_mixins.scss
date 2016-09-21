@@ -35,38 +35,3 @@ $green: #8bb992;
     color: $yellow;
   }
 }
-
-@media only screen and (max-width: 900px) {
-  body {
-    .topContainer .flipContainer {
-      height: 28vw;
-    }
-    .itemContainer {
-      margin: 2%;
-      width: 29%;
-    }
-    ul.size {
-      left: 35%;
-      width: 9vw;
-    }
-
-    ul.colors { @include colorSubNav(12%, 10vw, -66px)}
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    .topContainer .flipContainer {
-      height: 45vw;
-    }
-    .itemContainer {
-      margin: 2%;
-      width: 45%;
-    }
-    ul.size {
-      width: 14vw;
-    }
-
-    ul.colors { @include colorSubNav(16%, 13vw, -66px)}
-  }
-}
