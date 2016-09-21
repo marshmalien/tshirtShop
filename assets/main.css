@@ -15,33 +15,27 @@
   color: #deb17e; }
 
 @media only screen and (max-width: 900px) {
-  .topContainer .flipContainer {
+  body .topContainer .flipContainer {
     height: 28vw; }
-
-  .itemContainer {
+  body .itemContainer {
     margin: 2%;
     width: 29%; }
-
-  ul.size {
+  body ul.size {
     left: 35%;
     width: 9vw; }
-
-  ul.colors {
+  body ul.colors {
     right: 12%;
     width: 10vw;
     margin-top: -66px; } }
 @media only screen and (max-width: 600px) {
-  .topContainer .flipContainer {
+  body .topContainer .flipContainer {
     height: 45vw; }
-
-  .itemContainer {
+  body .itemContainer {
     margin: 2%;
     width: 45%; }
-
-  ul.size {
+  body ul.size {
     width: 14vw; }
-
-  ul.colors {
+  body ul.colors {
     right: 16%;
     width: 13vw;
     margin-top: -66px; } }
