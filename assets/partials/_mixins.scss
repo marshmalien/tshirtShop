@@ -1,3 +1,9 @@
+@mixin colorSubNav($right, $width, $margin-top) {
+  right: $right;
+  width: $width;
+  margin-top: $margin-top;
+}
+
 $borderColor: #5ca4d6;
 $blue: #81bce5;
 $pink: #d583ac;
@@ -43,11 +49,8 @@ $green: #8bb992;
       left: 35%;
       width: 9vw;
     }
-    ul.colors {
-      right: 12%;
-      width: 10vw;
-      margin-top: -66px;
-    }
+
+    ul.colors { @include colorSubNav(12%, 10vw, -66px)}
   }
 }
 
@@ -63,10 +66,7 @@ $green: #8bb992;
     ul.size {
       width: 14vw;
     }
-    ul.colors {
-      right: 16%;
-      width: 13vw;
-      margin-top: -66px;
-    }
+
+    ul.colors { @include colorSubNav(16%, 13vw, -66px)}
   }
 }
