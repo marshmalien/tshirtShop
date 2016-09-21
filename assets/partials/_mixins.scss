@@ -1,0 +1,37 @@
+
+@media only screen and (max-width: 900px) {
+  .topContainer .flipContainer {
+    height: 28vw;
+  }
+  .itemContainer {
+    margin: 2%;
+    width: 29%;
+  }
+  ul.size {
+    left: 35%;
+    width: 9vw;
+  }
+  ul.colors {
+    right: 13%;
+    width: 10vw;
+    margin-top: -66px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .topContainer .flipContainer {
+    height: 45vw;
+  }
+  .itemContainer {
+    margin: 2%;
+    width: 45%;
+  }
+  ul.size {
+    width: 14vw;
+  }
+  ul.colors {
+    right: 16%;
+    width: 13vw;
+    margin-top: -66px;
+  }
+}

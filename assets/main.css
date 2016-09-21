@@ -1,3 +1,34 @@
+@media only screen and (max-width: 900px) {
+  .topContainer .flipContainer {
+    height: 28vw; }
+
+  .itemContainer {
+    margin: 2%;
+    width: 29%; }
+
+  ul.size {
+    left: 35%;
+    width: 9vw; }
+
+  ul.colors {
+    right: 13%;
+    width: 10vw;
+    margin-top: -66px; } }
+@media only screen and (max-width: 600px) {
+  .topContainer .flipContainer {
+    height: 45vw; }
+
+  .itemContainer {
+    margin: 2%;
+    width: 45%; }
+
+  ul.size {
+    width: 14vw; }
+
+  ul.colors {
+    right: 16%;
+    width: 13vw;
+    margin-top: -66px; } }
 /* Eric Meyer's CSS Reset
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -90,7 +121,7 @@ li {
   padding: 2vw; }
 
 .front {
-  z-index: 2;
+  z-index: 1;
   transform: rotateY(0deg); }
 
 .back {
@@ -143,17 +174,55 @@ p {
 ul.size {
   border: 0.15em solid #5ca4d6;
   position: absolute;
-  bottom: 9vh;
-  height: 16vh;
   left: 8vw;
-  width: 6vw; }
-  ul.size .icon-t-shirt {
+  width: 6vw;
+  margin-top: -151px;
+  z-index: 2;
+  opacity: 0; }
+  ul.size li {
     width: 100%;
-    height: 4vh;
-    border: none; }
+    border: none;
+    float: none;
+    font-size: 1em; }
+    ul.size li::before {
+      font-size: 1.8em;
+      float: none;
+      vertical-align: text-top; }
+    ul.size li:nth-child(1):before {
+      font-size: 2em; }
+    ul.size li:nth-child(2):before {
+      font-size: 1.8em; }
+    ul.size li:nth-child(3):before {
+      font-size: 1.6em; }
+    ul.size li:nth-child(4):before {
+      font-size: 1.4em; }
+    ul.size li:hover span {
+      color: white; }
+    ul.size li span {
+      position: absolute; }
 
-.colorSubMenu {
-  display: none; }
+li.size:hover + ul {
+  opacity: 1; }
+
+ul.colors {
+  border: 0.15em solid #5ca4d6;
+  position: absolute;
+  right: 15%;
+  width: 7vw;
+  margin-top: -66px;
+  z-index: 2;
+  opacity: 0; }
+  ul.colors li {
+    border: none;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    font-size: 1.4em;
+    padding: 0.2em; }
+
+li.colors:hover + ul {
+  opacity: 1; }
 
 @media only screen and (max-width: 900px) {
   .topContainer .flipContainer {
@@ -161,13 +230,30 @@ ul.size {
 
   .itemContainer {
     margin: 2%;
-    width: 29%; } }
+    width: 29%; }
+
+  ul.size {
+    left: 35%;
+    width: 9vw; }
+
+  ul.colors {
+    right: 13%;
+    width: 10vw;
+    margin-top: -66px; } }
 @media only screen and (max-width: 600px) {
   .topContainer .flipContainer {
     height: 45vw; }
 
   .itemContainer {
     margin: 2%;
-    width: 45%; } }
+    width: 45%; }
+
+  ul.size {
+    width: 14vw; }
+
+  ul.colors {
+    right: 16%;
+    width: 13vw;
+    margin-top: -66px; } }
 
 /*# sourceMappingURL=main.css.map */
